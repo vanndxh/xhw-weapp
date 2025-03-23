@@ -194,7 +194,7 @@ export default function Genshin() {
               });
             }}
           >
-            如何获得？
+            如何获得
           </Button>
         )}
       </View>

@@ -84,3 +84,25 @@ export const roleList = [
   { name: "玛薇卡", englishName: "mavuika", version: "5.3" },
   { name: "梦见月瑞希", englishName: "mizuki", version: "5.4" },
 ];
+
+export const mockData = [
+  { name: "已垫", count: 2, gacha_type: "400" },
+  { name: "希格雯", count: 23, gacha_type: "400" },
+  { name: "玛薇卡", count: 75, gacha_type: "301" },
+  { name: "茜特菈莉", count: 68, gacha_type: "400" },
+  { name: "恰斯卡", count: 78, gacha_type: "301" },
+  { name: "七七", count: 78, gacha_type: "301" },
+  { name: "希诺宁", count: 64, gacha_type: "301" },
+  { name: "基尼奇", count: 78, gacha_type: "301" },
+  { name: "玛拉妮", count: 71, gacha_type: "301" },
+  { name: "艾梅莉埃", count: 80, gacha_type: "301" },
+  { name: "莫娜", count: 83, gacha_type: "301" },
+  { name: "克洛琳德", count: 77, gacha_type: "301" },
+  { name: "提纳里", count: 40, gacha_type: "400" },
+  { name: "阿蕾奇诺", count: 45, gacha_type: "301" },
+  { name: "七七", count: 29, gacha_type: "301" },
+  { name: "已垫", count: 6, gacha_type: "302" },
+  { name: "已垫", count: 9, gacha_type: "200" },
+  { name: "天空之翼", count: 79, gacha_type: "200" },
+  { name: "七七", count: 40, gacha_type: "200" },
+];

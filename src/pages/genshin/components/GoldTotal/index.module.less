@@ -1,26 +1,66 @@
 .goldTotal {
+  width: 100%;
+
   .title {
     font-size: 1.2rem;
     font-weight: bold;
     margin: 16px 0;
   }
 
+  .statsContainer {
+    display: flex;
+    gap: 0.8rem;
+    margin-bottom: 16px;
+    width: calc(100% - 24px);
+    padding: 0 12px;
+
+    .statCard {
+      flex: 1;
+      background: #fff;
+      border-radius: 12px;
+      padding: 12px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15), 0 1px 3px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+
+      &:active {
+        transform: translateY(2px);
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .statLabel {
+        font-size: 0.7rem;
+        color: #666;
+        margin-bottom: 4px;
+      }
+
+      .statValue {
+        font-size: 1rem;
+        font-weight: bold;
+      }
+    }
+  }
+
   .listContainer {
     display: flex;
     flex-wrap: wrap;
-    gap: 12px;
+    gap: 0.6rem;
 
     .listItem {
       display: flex;
       align-items: center;
       padding: 12px;
       background: #f5f5f5;
-      border-radius: 12px;
+      border-radius: 0.4rem;
       gap: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 
       .roleImage {
-        width: 0.8rem;
-        height: 0.8rem;
+        width: 1rem;
+        height: 1rem;
         border-radius: 8px;
       }
 

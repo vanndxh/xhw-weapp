@@ -1,7 +1,7 @@
 import { View, Text } from "@tarojs/components";
 import Taro from "@tarojs/taro";
 
-import "./index.less";
+import styles from "./index.module.less";
 
 export default function Index() {
   const handleGenshinRecord = () => {
@@ -35,17 +35,23 @@ export default function Index() {
   };
 
   return (
-    <View className="index">
-      <View className="card" onClick={handleGenshinRecord}>
+    <View className={styles.index}>
+      <View className={styles.card} onClick={handleGenshinRecord}>
         原神抽卡记录导出
       </View>
-      <View className="card-row">
-        <View className="small-card github-card" onClick={handleGithub}>
+      <View className={styles.cardRow}>
+        <View
+          className={styles.smallCard + " " + styles.githubCard}
+          onClick={handleGithub}
+        >
           GitHub
         </View>
-        <View className="small-card mail-card" onClick={handleMail}>
+        <View
+          className={styles.smallCard + " " + styles.mailCard}
+          onClick={handleMail}
+        >
           QQ Mail
-          <Text className="mail-address">1025196468@qq.com</Text>
+          <Text className={styles.mailAddress}>1025196468@qq.com</Text>
         </View>
       </View>
     </View>
