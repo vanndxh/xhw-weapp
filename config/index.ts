@@ -43,17 +43,7 @@ export default defineConfig<"vite">(async (merge) => {
     h5: {
       publicPath: "/",
       staticDirectory: "static",
-      devServer: {
-        proxy: {
-          "/api/mihoyo": {
-            target: "https://public-operation-hk4e.mihoyo.com",
-            changeOrigin: true,
-            pathRewrite: {
-              "^/api/mihoyo": "https://public-operation-hk4e.mihoyo.com",
-            },
-          },
-        },
-      },
+      devServer: {},
       miniCssExtractPluginOption: {
         ignoreOrder: true,
         filename: "css/[name].[hash].css",
